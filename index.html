@@ -4,71 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body{
-            margin: 0;
-            padding: 0;
-        }
-        .container{
-            display: flex;
-            min-height: 100vh;
-        }
-        .sidebar{
-            background-color:#333333;
-            width: 200px;
-        }
-        .content{
-            background-color: white;
-            width: 100%;
-        }
-        .menu-item{
-            background-color: white;
-            margin: 10px;
-            border-radius: 5px;
-            display: flex;
-            align-items: center;
-            padding: 5px 20px;
-            cursor: pointer;
-        }
-
-        .menu-item:hover{
-            background-color: rgb(161, 211, 231);
-        }
-        .menu-icon{
-            height: 20px;
-        }
-        .menu-text{
-            margin-left: 5px;
-        }
-    </style>
+   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div class="container">
         <div class="sidebar">
-           <div class="menu-item">
+           <a class="menu-item active-menu" href="./index.html">
             <img src="./img/sidebar-img/home.png" class="menu-icon">
             <span class="menu-text">Home</span>
-           </div>
+           </a>
 
-           <div class="menu-item">
-            <img src="./img/sidebar-img/category.png" class="menu-icon">
+           <a class="menu-item " href="./pages/category.html">
+            <img src="./img/sidebar-img/category.png" class="menu-icon" >
             <span class="menu-text">Category</span>
-           </div>
+           </a>
 
-           <div class="menu-item">
+           <a class="menu-item " href="./pages/search.html">
             <img src="./img/sidebar-img/search.png" class="menu-icon">
             <span class="menu-text">Search</span>
-           </div>
+           </a>
 
-           <div class="menu-item">
+           <a class="menu-item " href="./pages/contact.html">
             <img src="./img/sidebar-img/phone-call.png" class="menu-icon">
             <span class="menu-text">Contact Us</span>
-           </div>
+           </a>
 
 
         </div>
         <div class="content">
-           content
+           <h1>This is home page</h1>
         </div>
     </div>
 </body>
