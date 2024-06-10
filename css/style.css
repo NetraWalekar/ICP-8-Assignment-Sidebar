@@ -43,16 +43,53 @@ body{
 
 }
 
-@media screen and (max-width:639px) {
-    .sidebar{
-        display: none;
-    }
-    
+.Bottom-navigation-bar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color:#333333;
+    color: white;
+   
+
 }
 
-@media screen and (min-width:640px) and (max-width:789px) { 
+.bottom-menu-icon{
+    background-color: white;
+    margin: 5px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+}
+@media screen and (max-width:600px) {
+    .sidebar{
+        display: none;
+    } 
+    .Bottom-navigation-bar{
+       
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:689px) { 
     .sidebar{
         display: none;
     }
+    .Bottom-navigation-bar{
+        display: flex;
+        justify-content: space-around;
+    }
+}
 
+@media screen and (min-width:689px) and (max-width:990px) {
+    .Bottom-navigation-bar{
+        display: none;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1500px) {
+    .Bottom-navigation-bar{
+        display: none;
+    }
 }
